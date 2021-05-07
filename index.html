@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webtru 同意管理ライト設置サンプル</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">webtru</h1>
+    <p class="subtitle">
+      同意管理ライト設置サンプル
+    </p>
+  </div>
+  <section class="section">
+    <div class="container">
+      <h2 class="subtitle">テキストリンク</h2>
+      <div class="sample-code">
+        <p><span class="sample-code-title">設置タグ</span></p>
+        <pre>
+&lt;div id="datasign_privacy_notice__XXXXXXXX"&gt;
+  &lt;input type="hidden" class="opn_link_text" value="オンラインプライバシー通知"&gt;
+  &lt;script class="__datasign_privacy_notice__" src="//as.datasign.co/js/opn.js" data-hash="XXXXXXXX" async&gt;&lt;/script&gt;
+&lt;/div&gt;</pre>
+      </div>
+      <div class="sample-code">
+        <p><span class="sample-code-title">動作サンプル</span></p>
+        <div class="sample-code-demo">
+          <div id="datasign_privacy_notice__11bb2f80">
+            <input type="hidden" class="opn_link_text" value="オンラインプライバシー通知">
+            <script class="__datasign_privacy_notice__" src="//as.datasign.co/js/opn.js" data-hash="11bb2f80" async>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <h2 class="subtitle">ウィジェット</h2>
+      <div class="sample-code">
+        <p><span class="sample-code-title">設置タグ</span></p>
+        <pre>
+&lt;div id="datasign_privacy_notice"&gt;
+  &lt;script class="__datasign_privacy_notice__" src="//as.datasign.co/js/opnWidget.js" data-hash="XXXXXXXX" async&gt;&lt;/script&gt;
+&lt;/div&gt;</pre>
+      </div>
+      <div class="sample-code">
+        <p>
+          <span class="sample-code-title">動作サンプル</span>
+          このページ下方に表示されているものが、同意管理ライトのウィジェットタイプです。
+        </p>
+        <div id="datasign_privacy_notice">
+          <script class="__datasign_privacy_notice__" src="//as.datasign.co/js/opnWidget.js" data-hash="11bb2f80" async>
+          </script>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <h2 class="subtitle">JSONファイル</h2>
+      <div class="sample-code">
+        <p><span class="sample-code-title">JSONファイル参照URL</span></p>
+        <pre>
+https://as.datasign.co/privacy/policy/XXXXXXXX-opn.json
+</pre>
+      </div>
+      <div class="sample-code">
+        <p><span class="sample-code-title">設置サンプルコード（jQueryを利用しています）</span></p>
+        <pre>
+&lt;div id="online-privacy-notice"&gt;&lt;/div&gt;
+&lt;script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="path_to_css/opn-json.css"&gt;
+&lt;script src="/path_to_js/opn-json.js"&gt;&lt;/script&gt;</pre>
+      </div>
+      <div class="sample-code">
+        <p>
+          <span class="sample-code-title">動作サンプル</span>
+          オンラインプライバシー通知をページに展開するサンプルです。
+        </p>
+        <div id="online-privacy-notice"></div>
+      </div>
+    </div>
+  </section>
+  <style type="text/css">
+    body {
+      margin: 1rem 20vw 150px;
+    }
+
+    @media screen and (max-width:767px) {
+      body {
+        margin: 1rem 10px 150px;
+      }
+    }
+
+    .subtitle {
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    h2.subtitle {
+      font-size: 0.875rem;
+      background-color: #333;
+      color: #FFF;
+      padding: .5rem .875rem;
+      display: inline-block;
+    }
+
+    .sample-code {
+      margin-bottom: 20px;
+    }
+
+    .sample-code-title {
+      font-weight: 600;
+      font-size: 13px;
+      display: block;
+    }
+
+    .sample-code-demo {
+      margin: 1rem 0;
+    }
+
+    #online-privacy-notice {
+      font-size: .875rem;
+      padding: 1rem;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/opn-json.css">
+  <script src="assets/js/opn-json.js"></script>
+</body>
+
+</html>
