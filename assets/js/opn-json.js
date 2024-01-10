@@ -4,7 +4,7 @@
   let opn_context = [];
   let opn_types_array = [];
   let sid, name, optout, policy, provider, providerUrl, types, typesJa, typeJa, type_flag, url, type, _types_key, handle_types_array, _type_text, _use_data;
-  const OPN_SOURCE_FILE = 'https://as.datasign.co/privacy/policy/3c92c535-opn.json'
+  const OPN_SOURCE_FILE = 'https://cmp.datasign.co/v2/3a353282f5/opn.json'
 
   $.when(
       $.getJSON(OPN_SOURCE_FILE)
